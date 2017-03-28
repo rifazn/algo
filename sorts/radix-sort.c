@@ -1,23 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
-
-#define SIZE 1000100
-
-clock_t t;
-int a[SIZE];
-
-void start_clock() {
-	t = clock();
-}
-
-void stop_clock() {
-	t = clock() - t;
-}
-
-void print_time(int size) {
-	printf("input size %d: %f\n", size, ( (float) t )/CLOCKS_PER_SEC);
-}
 
 void print_array(int n, int A[]) {
 	int i;
@@ -59,21 +41,13 @@ int main(void) {
 	int A[1000100];
 	int n;
 
-	freopen("input0.txt", "r", stdin);
-
     scanf("%d", &n);
 
 	for (int i = 1; i <= n; i++) {
 		scanf(" %d", A + i);
 	}
 
-	start_clock();
-
 	int* B = radix_sort(A, 2, n);
-
-	stop_clock();
-
-	print_time(n);
 
 	return 0;
 }
