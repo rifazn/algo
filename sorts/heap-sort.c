@@ -1,3 +1,9 @@
+/* Rifaz Nahiyan
+ * Heap Sort
+ * 
+ * Please note that it is 1 indexed.
+ * */
+
 #include<stdio.h>
 #include <stdlib.h>
 

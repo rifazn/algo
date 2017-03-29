@@ -1,3 +1,9 @@
+/* Rifaz Nahiyan
+ * Radix sort using Counting sort
+ *
+ * Please note that this algo is 1 indexed.
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 
